@@ -12,7 +12,7 @@ public class App
         double width;
         double length;
         double area;
-        double gallon = 350;
+        final double GALLON = 350;
 
         Scanner input = new Scanner(System.in);
 
@@ -23,7 +23,7 @@ public class App
         width = input.nextDouble();
 
         area = length * width;
-        double howMuchPaint = Math.ceil(area/gallon);
+        double howMuchPaint = Math.ceil(area/GALLON);
 
         System.out.printf("You will need to purchase %.0f gallons of paint to cover %.0f square feet.", howMuchPaint, area);
     }
